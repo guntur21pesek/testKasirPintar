@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMainOtp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="#2196F3">
+            <TextView
+                android:id="@+id/txt_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:text="Tambah Barang Baru"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTambahBarang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edtNamaBrg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#03978b" />
+            <EditText
+                android:id="@+id/edtKodeBrg"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#03978b" />
+            <EditText
+                android:id="@+id/edtStok"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#03978b" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_margin="3dp">
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#F44336"
+                android:onClick="true"
+                android:gravity="center"
+                android:text="CANCEL"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/okBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00BCD4"
+                android:onClick="true"
+                android:gravity="center"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

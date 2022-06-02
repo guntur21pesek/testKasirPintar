@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TestKasirPintar</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="checkout">Checkout</string>
+    <string name="order">Order</string>
+    <string name="barang">Barang</string>
 </resources>
